@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/skills.css">
   <link rel="stylesheet" href="css/carousel.css">
@@ -24,13 +24,13 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
+  <header class="navbar">
     <div class="image-container">
       <a href="index.html">
         <img src="images/shin-chan-logo.jpg" alt="Shin chan familia">
       </a>
     </div>
-    <div class="desktop-menu">
+    <nav class="desktop-menu">
       <ul class="menu">
         <li class="list-item">
           <a href="projects.html">Proyectos</a>
@@ -42,7 +42,7 @@
           <a href="#contacto">Contacto</a>
         </li>
       </ul>
-    </div>
+    </nav>
     <div class="mobile-menu">
       <label for="hamburger-input">Menu</label>
       <input type="checkbox" id="hamburger-input" class="burger-shower" />
@@ -61,31 +61,7 @@
         <div class="overlay"></div>
       </label>
     </div>
-  </nav>
-  <!-- Header -->
-  <header class="header">
-    <picture class="img-container">
-      <img
-        sizes="(max-width: 1400px) 100vw, 1400px"
-        srcset="
-          images/header/bg-shinchan_jt8dwx_c_scale,w_200.jpg 200w,
-          images/header/bg-shinchan_jt8dwx_c_scale,w_518.jpg 518w,
-          images/header/bg-shinchan_jt8dwx_c_scale,w_734.jpg 734w,
-          images/header/bg-shinchan_jt8dwx_c_scale,w_904.jpg 904w,
-          images/header/bg-shinchan_jt8dwx_c_scale,w_1050.jpg 1050w,
-          images/header/bg-shinchan_jt8dwx_c_scale,w_1243.jpg 1243w,
-          images/header/bg-shinchan_jt8dwx_c_scale,w_1397.jpg 1397w,
-          images/header/bg-shinchan_jt8dwx_c_scale,w_1394.jpg 1394w,
-          images/header/bg-shinchan_jt8dwx_c_scale,w_1400.jpg 1400w"
-        src="images/header/bg-shinchan_jt8dwx_c_scale,w_1400.jpg"
-        alt=""
-      >
-    </picture>
-    <div class="text-content">
-      <h1>Shin chan portfolio</h1>
-    </div>
   </header>
-  <!-- End header -->
   <!-- End Navbar -->
   <main class="main-content">
     <section class="introduction">
@@ -137,50 +113,11 @@
       </div>
     </section>
   </main>
-  <!-- Carousel -->
-  <section class="carousel-container">
-    <div class="carousel-slides">
-      <div class="slide" id="slide1">
-        <article>
-          <img src="images/carousel/peliculas-shin-chan.jpg" alt="Peliculas shin chan">
-          <a href="https://shinchan.lukinternacional.com/es/24-peliculas-shin-chan" target="_blank" rel="noopener noreferrer">
-            <div class="text-content main-bg">
-              <h3>Peliculas</h3>
-              <p>Diviertete viendo las mejores peliculas de sinchan</p>
-            </div>
-          </a>
-        </article>
-      </div>
-      <div class="slide" id="slide2">
-        <article class="yard-bg">
-          <img src="images/carousel/figuras-y-peluches-shin-chan.jpg" alt="Peliculas shin chan">
-          <a href="https://shinchan.lukinternacional.com/es/27-figuras-y-peluches-shin-chan" target="_blank" rel="noopener noreferrer">
-            <div class="text-content main-bg">
-              <h3>Figuras</h3>
-              <p>Compra tus figuras favoritas de shin chan</p>
-            </div>
-          </a>
-        </article>
-      </div>
-      <div class="slide" id="slide3">
-        <article>
-          <img src="images/carousel/complementos.jpg" alt="Peliculas shin chan">
-          <a href="https://shinchan.lukinternacional.com/es/26-complementos" target="_blank" rel="noopener noreferrer">
-            <div class="text-content main-bg">
-              <h3>Complementos</h3>
-              <p>Lo mejores complementos de sinchan</p>
-            </div>
-          </a>
-        </article>
-      </div>
+  <header class="banner">
+    <div class="text-content">
+      <h1>Shin chan portfolio</h1>
     </div>
-    <div class="carousel-links">
-      <a class="carousel-dot" href="#slide1"></a>
-      <a class="carousel-dot" href="#slide2"></a>
-      <a class="carousel-dot" href="#slide3"></a>
-    </div>
-  </section>
-  <!-- End Carousel -->
+  </header>
   <form class="form-container" action="/contact" method="post">
     <div class="input-text-group">
       <div class="form-group">
@@ -238,11 +175,17 @@
       <label class="text-label" for="moreInfo">Más información</label>
       <textarea required name="moreInfo" id="moreInfo" maxlength="180" placeholder="Que mas quieres saber" cols="30" rows="10"></textarea>
     </div>
+    <div class="form-group">
+      <div class="radio-group">
+        <input type="checkbox" name="newsletter" id="newsletter" value="newsletter">
+        <label for="newsletter">Quiero acceso a la newsletter</label>
+      </div>
+    </div>
     <div>
       <button class="btn" type="submit">Enviar</button>
+      <input type="reset" class="btn secondary" value="Reset">
     </div>
   </form>
-  <!-- Footer -->
   <footer id="contacto" class="footer main-bg">
     <div class="rrss">
       <a class="link" href="https://www.youtube.com/shinchan" target="_blank" rel="noopener noreferrer">

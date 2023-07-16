@@ -1,6 +1,7 @@
 .header-video iframe {
   width: 100%;
   min-height: 50vh;
+  animation: fadeIn 2s forwards;
 }
 
 .project-title {
@@ -29,4 +30,13 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+    opacity: 1;
+	}
 }
