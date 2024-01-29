@@ -1,6 +1,4 @@
 [![GitHub issues](https://img.shields.io/github/issues/KeepCodingWeb16/html-css-practica)](https://github.com/KeepCodingWeb16/html-css-practica/issues)
-[![GitHub stars](https://img.shields.io/github/stars/KeepCodingWeb16/html-css-practica)](https://github.com/KeepCodingWeb16/html-css-practica/stargazers)
-
 ## Portfolio exercise
 
 In this exercise we work to create a simple portfolio with [html](https://developer.mozilla.org/en-US/docs/Web/HTML) and [css](https://developer.mozilla.org/en-US/docs/Web/CSS). We will not be using any bundle tool like [Parcel](https://parceljs.org/), [webpack](https://webpack.js.org/) or [Rollup](https://rollupjs.org/). Therefore, the code will be structure in plain CSS but in different files. We did this to keep it organized so it is easier to maintain than one large file.
